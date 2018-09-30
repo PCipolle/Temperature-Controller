@@ -1,0 +1,33 @@
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    display:inline;
+    text-align: center;
+}
+
+.nav-link {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.TempStyle {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.69);
+}
+
+h3 {
+    text-align: center;
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.minLabel {
+    font-size: 14pt;
+}

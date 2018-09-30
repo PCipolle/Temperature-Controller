@@ -1,0 +1,69 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2>Temperature Controller</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <h3 class="TempStyle">Set Temp:</h3>
+        <h3 id="setTemp"></h3>
+        <form id="incTemp" method="POST" action="#">
+            <button type="submit" class="btn btn-outline-danger btn-block">+</button>
+        </form>
+        <form id="decTemp" method="POST" action="#">
+            <button type="submit" class="btn btn-outline-primary btn-block">-</button>
+        </form>
+    </div>
+    <div class="col-sm-6">
+        <h3 class="TempStyle">Current Temp:</h3>
+        <h3 id="curTemp"></h3>
+        <h3 class="TempStyle">Timer:</h3>
+        <h3 id="runningTime"></h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-2">
+        <label for="startHours" class="minLabel">Start Time:</label>
+        <input id="startHours" type="number" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        <label for="startMinutes" class="minLabel"></label>
+        <input id="startMinutes" type="number" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        <label for="startAmPm" class="minLabel"></label>
+        <input id="startAmPm" type="number" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        <label for="stopHours" class="minLabel">Stop Time</label>
+        <input id="stopHours" type="number" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        <label for="stopHours" class="minLabel"></label>
+        <input id="stopHours" type="number" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        <label for="stopAmPm" class="minLabel"></label>
+        <input id="stopAmPm" type="number" class="form-control">
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <form id="start" method="POST" action="#">
+            <button type="submit" class="btn btn-success btn-block startButton">Start</button>
+        </form>
+    </div>
+    <div class="col-sm-6">
+        <form id="stop" method="POST" action="#">
+            <button type="submit" class="btn btn-danger btn-block">Stop</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

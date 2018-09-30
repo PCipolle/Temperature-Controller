@@ -1,0 +1,39 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2>I/O Monitor</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+		<h3 class="TempStyle">Inputs:</h3>
+        <h4>Room Temp:</h4>
+        <h4 class="curTempStyle" id="curTempIO"></h4>
+        <h5></h5>
+        <h4>Condenser Temp:</h4>
+        <h4 class="condTempStyle" id="condTempIO"></h4>
+    </div>
+    <div class="col-sm-6">
+		<h3 class="TempStyle">Outputs:</h3>
+        <h4>Compressor State:</h4>
+        <h4 class="condStyle" id="compState"></h4>
+        <h5></h5>
+        <h4>Fan State:</h4>
+        <h4 class="fanStyle" id="fanState"></h4>
+        <h5></h5>
+        <h4>Heat Coil State:</h4>
+        <h4 class="coilStyle" id="heatCoilState"></h4>
+        <h5></h5>
+        <h4>Heater 1 State:</h4>
+        <h4 class="heater1Style" id="heater1State"></h4>
+        <h5></h5>
+        <h4>Heater 2 State:</h4>
+        <h4 class="heater2Style" id="heater2State"></h4>
+    </div>
+</div>
+
+{% endblock %}
